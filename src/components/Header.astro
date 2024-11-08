@@ -2,10 +2,68 @@
 
 ---
 
-<header class="p-10">
-  <nav class="flex justify-center items-center gap-20">
-    <a href="/om-access" class="font-light">OM ACCESS</a>
-    <a href="/om-access" class="font-light">OPRINDELSEN</a>
-    <a href="/om-access" class="font-light">TANKER</a>
+<header class="fixed top-0 left-0 w-full p-8 border-b-2 border-[#333333] border-opacity-40 bg-[#fafafa] z-50" x-data="{ showmenu: false }">
+  <nav class="flex justify-between items-center">
+    <!-- Logo or Site Name (if needed) -->
+    <a href="/#main" class="text-2xl font-bold">
+      <img src="/logo.svg" alt="A logo" class="w-12 h-12 hover:scale-110 transition duration-300 hover:opacity-50" />
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <div class="hidden lg:flex gap-6">
+      <a href="/#om" class="font-light hover:underline">OM ACCESS</a>
+      <a href="/#oprindelse" class="font-light hover:underline">OPRINDELSEN</a>
+      <a href="/#tanker" class="font-light hover:underline">TANKER</a>
+    </div>
+
+    <!-- Burger Menu Button (Mobile Only) -->
+    <button id="burgermenu" class="lg:hidden" @click="showmenu = !showmenu">
+      <template x-if="showmenu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 text-[#333333] hover:text-site-red transition duration-300"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </template>
+      <template x-if="!showmenu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 text-[#333333] hover:text-site-red transition duration-300"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </template>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu (Hidden on Larger Screens) -->
+  <nav
+    id="mobilmenu"
+    class="flex flex-col items-center pt-4 bg-[#fafafa] lg:hidden"
+    x-show="showmenu"
+    x-transition
+    @click="showmenu = false"
+    @click.outside="showmenu = false"
+  >
+    <ul class="space-y-4">
+      <li>
+        <a href="/#om" class="font-light hover:underline">OM ACCESS</a>
+      </li>
+      <li>
+        <a href="/#oprindelse" class="font-light hover:underline">OPRINDELSEN</a>
+      </li>
+      <li>
+        <a href="/#tanker" class="font-light hover:underline">TANKER</a>
+      </li>
+    </ul>
   </nav>
 </header>
