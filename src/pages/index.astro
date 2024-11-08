@@ -1,15 +1,41 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import Button from "../components/Button.astro";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title="ACCESS – en sans-serif der skiller sig ud">
+  <div class="flex flex-col justify-center items-start max-w-6xl mx-auto border-black border-l-2 border-opacity-40">
+    <h1 class="text-left pl-12 mb-4">ACCESS</h1>
+    <h2 class="text-left pl-12">En sans-serif der skiller sig ud</h2>
+    <h3 class="text-left pl-12">Af Sara Ringkow Petersen</h3>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 max-w-6xl mx-auto pt-20">
+    <div>
+      <h2 class="text-left font-bold pb-4">OM ACCESS</h2>
+      <p class="max-w-xl">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt harum rerum minima tempora tenetur pariatur eaque corrupti commodi odit
+        deserunt, natus dolor obcaecati eius ipsum nobis nostrum delectus voluptatum optio? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Delectus, ipsum voluptatibus. Ducimus reiciendis voluptates aliquam? Quos, animi! Repudiandae sunt consequatur ad incidunt blanditiis,
+        doloribus praesentium distinctio quo, quia aperiam nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate illum
+        minima, ducimus repellendus voluptatibus, rerum quisquam asperiores architecto est eaque. Vitae autem a voluptatum dolorum vel iure,
+        reprehenderit impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores similique odio assumenda consequuntur rerum
+        corrupti nam ullam porro provident iste expedita laborum a, mollitia, deserunt, cupiditate ut dolorem distinctio. <br /><br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, sit ipsam cupiditate deleniti possimus maiores et minus natus asperiores dolorem
+        autem sapiente corrupti veniam explicabo voluptas? Reiciendis voluptatum architecto quisquam! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Facere aliquid temporibus voluptates enim suscipit corrupti deserunt praesentium, minus nam ipsa amet saepe tenetur doloremque atque ab voluptate
+        aperiam beatae sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias blanditiis, eius, maxime sapiente quasi temporibus
+        accusamus odit architecto perspiciatis facere tempore exercitationem ex possimus, repudiandae quos corporis sunt rem. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Rerum praesentium reiciendis in ducimus ullam inventore reprehenderit id maxime, corrupti molestiae voluptas impedit
+        nobis repellat, assumenda similique porro sequi minus eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus,
+        sed nobis et asperiores sit provident. Facere, dolorem dignissimos qui sapiente neque, obcaecati deserunt reiciendis quos voluptates, in dicta
+        ducimus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus error accusantium doloribus cum ex quasi deleniti voluptas ipsum mollitia
+        amet.
+      </p>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-10">
+      <img src="/images/access_mockup.webp" alt="mockup" class="w-[365px] h-[365px]" />
+      <img src="/images/logo_collage.webp" alt="collage" class="w-[365px] h-[365px]" />
+    </div>
+  </div>
 </MainLayout>
