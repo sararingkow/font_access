@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/tobii.min.css";
 ---
 
 <MainLayout
@@ -9,60 +10,64 @@ import MainLayout from "../layouts/MainLayout.astro";
   ogdescription="ACCESS – en sans-serif der skiller sig ud fra det normale"
 >
   <div id="main" class="main flex flex-col justify-center items-start max-w-5xl mx-auto md:border-l-2 border-[#333333] border-opacity-40">
-    <h1 class="text-left pl-12 mt-40 border-b-2 border-[#333333] border-opacity-40">ACCESS</h1>
-    <h1 class="main-h1 text-left pl-12 opacity-30">ACES</h1>
+    <h1 class="text-left pl-12 mt-40 border-b-2 border-[#333333] border-opacity-40 hover:transform hover:-translate-y-2 transition duration-500">
+      ACCESS
+    </h1>
+    <h1 class="main-h1 text-left pl-12 opacity-30 transform -scale-y-100 hover:transform hover:translate-y-2 transition duration-500">ACES</h1>
     <div class="pt-12">
       <h2 class="text-left pl-12">EN SANS-SERIF MED ET <br /> FUTURISTISK TWIST</h2>
       <h3 class="text-left pl-12 mt-8 opacity-50">Af Sara Ringkow Petersen</h3>
     </div>
   </div>
 
-  <div id="om" class="grid md:grid-cols-2 grid-cols-1 gap-4 md:max-w-5xl max-w-sm mx-auto md:pt-32 pt-16">
-    <div>
+  <div id="om" class="grid md:grid-cols-2 grid-cols-1 gap-4 md:max-w-5xl max-w-sm mx-auto md:pt-32 pt-12">
+    <div class="md:border-b-2 border-[#333333] border-opacity-40">
       <h2 class="text-left font-bold pb-4">OM ACCESS</h2>
-      <p class="max-w-xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt harum rerum minima tempora tenetur pariatur eaque corrupti commodi odit
-        deserunt, natus dolor obcaecati eius ipsum nobis nostrum delectus voluptatum optio? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Delectus, ipsum voluptatibus. Ducimus reiciendis voluptates aliquam? Quos, animi! Repudiandae sunt consequatur ad incidunt blanditiis,
-        doloribus praesentium distinctio quo, quia aperiam nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate illum
-        minima, ducimus repellendus voluptatibus, rerum quisquam asperiores architecto est eaque. Vitae autem a voluptatum dolorum vel iure,
-        reprehenderit impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores similique odio assumenda consequuntur rerum
-        corrupti nam ullam porro provident iste expedita laborum a, mollitia, deserunt, cupiditate ut dolorem distinctio. <br /><br />
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, sit ipsam cupiditate deleniti possimus maiores et minus natus asperiores dolorem
-        autem sapiente corrupti veniam explicabo voluptas? Reiciendis voluptatum architecto quisquam! Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Facere aliquid temporibus voluptates enim suscipit corrupti deserunt praesentium, minus nam ipsa amet saepe tenetur doloremque atque ab voluptate
-        aperiam beatae sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias blanditiis, eius, maxime sapiente quasi temporibus
-        accusamus odit architecto perspiciatis facere tempore exercitationem ex possimus, repudiandae quos corporis sunt rem. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Rerum praesentium reiciendis in ducimus ullam inventore reprehenderit id maxime, corrupti molestiae voluptas impedit
-        nobis repellat, assumenda similique porro sequi minus eius.
+      <p class="max-w-xl leading-7">
+        <em>Access</em> er en specialdesignet display-font, inspireret af det futuristiske og skabt med øje for både enkelhed og tekniske detaljer. Med
+        rene linjer og et minimalistisk udtryk, balancerer fonten mellem to sans-serif stile, der hver især bidrager med unikke karaktertræk. Resultatet
+        er en moderne font, der både er letlæselig og samtidig udstråler en teknologisk præcision. <br /><br /><em>Access</em> er designet til at kunne
+        bruges på digitale platforme, hvor tydelighed og æstetik går hånd i hånd, men har også potentiale til at skille sig ud i trykte medier. Fontens
+        enkle, men alligevel dynamiske udtryk gør den til et ideelt valg for dem, der søger en stilfuld, teknisk og fremadskuende typografi.
       </p>
     </div>
-    <div class="flex flex-col md:justify-center md:items-end items-start md:gap-3 gap-5">
-      <img src="/images/access_mockup.webp" alt="mockup" class="w-[365px] h-[365px] shadow-xl border border-[#333333] mt-12 md:mt-0" />
-      <img src="/images/logo_collage.webp" alt="collage" class="w-[365px] h-[365px] shadow-xl border border-[#333333]" />
+    <div class="flex flex-col md:justify-center md:items-end items-start md:gap-5 gap-6">
+      <a href="/images/access_mockup.webp" class="lightbox">
+        <img
+          src="/images/access_mockup.webp"
+          alt="Examples with Access (mockup)"
+          class="w-[365px] h-[540px] shadow-xl mt-12 md:mt-0 rounded-lg hover:scale-105 transition duration-500"
+        />
+      </a>
     </div>
   </div>
 
-  <div id="oprindelse" class="grid md:grid-cols-2 grid-cols-1 gap-4 md:max-w-5xl max-w-sm mx-auto md:pt-32 pt-16">
+  <div id="oprindelse" class="grid md:grid-cols-2 grid-cols-1 md:max-w-5xl max-w-sm mx-auto md:pt-32 pt-12">
     <div class="flex flex-col md:justify-center md:items-start">
-      <img src="/images/collage2.webp" alt="collage" class="w-[365px] h-[500px] shadow-xl mt-8 md:mt-0" />
+      <a href="/images/collage2.webp" class="lightbox">
+        <img
+          src="/images/collage2.webp"
+          alt="Process-collage"
+          class="w-[365px] h-[540px] shadow-xl md:mt-0 rounded-lg hover:scale-105 transition duration-500"
+        />
+      </a>
     </div>
-    <div>
+    <div class="md:border-b-2 border-[#333333] border-opacity-40">
       <h2 class="text-left font-bold pb-4 md:mt-0 mt-12">FONTEN'S OPRINDELSE</h2>
-      <p class="max-w-xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt harum rerum minima tempora tenetur pariatur eaque corrupti commodi odit
-        deserunt, natus dolor obcaecati eius ipsum nobis nostrum delectus voluptatum optio? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Repudiandae, quae? Quos, animi! Repudiandae sunt consequatur ad incidunt blanditiis, doloribus praesentium distinctio quo, quia aperiam nemo?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate illum minima, ducimus repellendus voluptatibus, rerum quisquam
-        asperiores architecto est eaque. Vitae autem a voluptatum dolorum vel iure, reprehenderit impedit. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Aperiam maiores similique odio assumenda consequuntur rerum corrupti nam ullam porro provident iste expedita laborum a,
-        mollitia, deserunt, cupiditate ut dolorem distinctio. <br /><br />
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, sit ipsam cupiditate deleniti possimus maiores et minus natus asperiores dolorem
-        quas.
+      <p class="max-w-xl leading-7">
+        Jeg var på udkig efter at designe en font, der var både var enkelt at læse og skrive, men også designet til at skabe et stilfuldt og teknisk
+        udtryk. Her faldt jeg over tre sans-serif fonte: Thinoo, Alexana og Anurati. Thinoo, for dens enkelthed. Og Alexana og Anurati for deres
+        karaktertræk. Herefter blev der ekperimenteret med alle tre fonte, for at få en idé om det overordnede design af min font, som jeg kunne
+        udarbejde. Det var også her at navnet til fonten kom til. Jeg ville gerne bruge ordet <em>accessibility</em>, men det synes jeg var for langt
+        et navn at bruge til en font. Så jeg endte med at gå med <em>access</em>, da det var kort og passede perfekt til den overordnede stil. <br />
+        Design-mæssigt valgte jeg at gå med en kombination af Thinoo og Alexana, da Anurati var for svær at læse og arbejde med. Thinoo kombineret med
+        Alexana's karaktertræk gav mig det udtryk jeg gerne ville have i min font. Noget enkelt, men samtidig også dynamisk, så det ikke bare var en ganske
+        normal sans-serif font med ingen former for elementer til sig. Alt idégenerering og design blev udført på papir, hvorefter det hele blev rentegnet
+        digitalt i Adobe Illustrator.
       </p>
     </div>
   </div>
-  <div id="tanker" class="grid md:grid-cols-2 grid-cols-1 gap-4 md:max-w-5xl max-w-sm mx-auto md:pt-32 pt-16">
+  <div id="tanker" class="grid md:grid-cols-2 grid-cols-1 gap-4 md:max-w-5xl max-w-sm mx-auto md:pt-32 pt-12">
     <div>
       <h2 class="text-left font-bold pb-4 md:mt-0 mt-8">ACES, ACCESS.. <br /> SKRIVEMÅDEN ER LIGEGYLDIG</h2>
       <p class="max-w-xl">
@@ -74,13 +79,12 @@ import MainLayout from "../layouts/MainLayout.astro";
         adipisicing elit. Aperiam maiores similique odio assumenda consequuntur rerum corrupti nam ullam porro provident iste expedita laborum a,
         mollitia, deserunt, cupiditate ut dolorem distinctio. <br /><br />
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, sit ipsam cupiditate deleniti possimus maiores et minus natus asperiores dolorem
-        quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid temporibus voluptates enim suscipit corrupti deserunt praesentium,
-        minus nam ipsa amet saepe tenetur doloremque atque ab voluptate aperiam beatae sunt.
+        quas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
     </div>
     <div class="decor flex flex-col md:justify-start justify-center pt-8 md:pt-0">
-      <h1 class="aces text-[#4B5563]">ACES</h1>
-      <h1>ACCESS</h1>
+      <h1 class="aces text-[#4B5563] transform -scale-x-100 hover:transform hover:-translate-y-2 transition duration-500">ACES</h1>
+      <h1 class="hover:transform hover:-translate-y-2 transition duration-500">ACCESS</h1>
     </div>
   </div>
   <div class="md:pb-32 pb-12"></div>
@@ -96,10 +100,6 @@ import MainLayout from "../layouts/MainLayout.astro";
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .aces {
-    transform: scaleX(-1);
-  }
-
   @media (min-width: 768px) {
     .decor {
       font-size: 6rem;
@@ -110,10 +110,13 @@ import MainLayout from "../layouts/MainLayout.astro";
     font-family: "Access";
     writing-mode: horizontal-tb;
     text-orientation: upright;
-    transform: scaleY(-1);
   }
 </style>
 
+<script is:inline src="/tobii.min.js"></script>
+<script defer>
+  const tobii = new Tobii();
+</script>
 <script>
   import { animate, inView } from "motion";
   /*Entrance Animation*/

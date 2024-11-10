@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import ProgressBar from "../components/ProgressBar.astro";
 import "../styles/tailwind.css";
 import "animate.css";
 import "../styles/global.css";
@@ -30,6 +31,7 @@ const { title } = Astro.props;
   <body class="bg-[#fafafa] text-[#333333]">
     <header>
       <Header />
+      <ProgressBar />
     </header>
 
     <main class="overflow-x-hidden">
