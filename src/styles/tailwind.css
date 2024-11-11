@@ -16,7 +16,7 @@
 
   @font-face {
     font-family: "Access";
-    src: url("access-regular-webfont.woff2") format("woff2"), /* Super Modern Browsers */ url("access-regular-webfont.woff") format("woff"); /* Pretty Modern Browsers */
+    src: url("/fonts/access-regular-webfont.woff2") format("woff2"), url("/fonts/access-regular-webfont.woff") format("woff");
     font-weight: normal;
   }
 
